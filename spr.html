@@ -1,0 +1,55 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oblicznie delty dla brata</title> 
+<script>
+function delta()
+{
+    var a = document.getElementById("a").value;
+    var b = document.getElementById("b").value;
+    var c = document.getElementById("c").value;
+     
+    var delta = (b*b)-(4*a*c);
+    var pierw = Math.sqrt(delta);
+     
+    document.getElementById("w-delta").innerHTML=("Delta wynosi: "+delta);
+     
+     if (delta > 0) 
+    {
+        document.getElementById("w-mzerowe").innerHTML=("Delta większa od zera, dwa miejsca zerowe");
+        var x1 = (((-b)-pierw)/(2*a));
+        var x2 = (((-b)-pierw)/(2*a));
+        document.getElementById("w-mzerowe-wynik").innerHTML=("Miejsce zerowe x1 wynosi: "+x1+" Miejsce zerowe x2 wynosi: "+x2);
+    }
+    else if (delta == 0) 
+    {
+        document.getElementById("w-mzerowe").innerHTML=("Delta równa zero, jedno miejsce zerowe");
+        var x1 = ((-b)/(2*a));
+        document.getElementById("w-mzerowe-wynik").innerHTML=("Miejsce zerowe wynosi: "+x1);
+    }
+    else (delta < 0); 
+    {
+        document.getElementById("w-mzerowe").innerHTML=("Delta ujemna, brak miejsc zerowych");
+    }
+}
+</script>
+</head>
+<body>
+ <div id="container">
+ <div id="komunikat"> Wpisz a, b, c aby obliczyć deltę.</div>
+ <div id="obliczanie">
+<input type="text" id="a" /> 
+<input type="text" id="b" /> 
+<input type="text" id="c" /> 
+<input type="submit" value="Oblicz" onclick="delta()" /> <br />
+<div id="w-delta"></div>
+<div id="w-mzerowe"></div>
+<div id="w-mzerowe-wynik"></div>
+</div>
+</div>
+ 
+</body>
+</html>
