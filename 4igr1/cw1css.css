@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background-color: aqua;
+    height: 50px;
+}
+.header{
+    background-color: crimson;
+    height: 200px;
+}
+.hero{
+    background-color: darkslategrey;
+    height: 200px;
+    flex-basis: 60%;
+}
+.content{
+    background-color: mediumslateblue;
+    height: 200px;
+    flex-basis: 60%;
+}
+.sidebar{
+    background-color: yellowgreen;
+    height: 400px;
+    float:right;
+    flex-basis: 40%;
+    margin-top: -200px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: indigo;
+    height: 50px;
+
+}

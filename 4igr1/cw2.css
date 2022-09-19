@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: limegreen;
+    height: 150px;
+}
+.hero{
+    background-color: slateblue;
+    height: 200px;
+    flex-basis: 60%;
+    margin-left: 20%;
+}
+.content{
+    background-color: yellowgreen;
+    height: 200px;
+    flex-basis: 60%;
+    margin-left: 20%;
+}
+.content2{
+    background-color: purple;
+    height: 200px;
+    flex-basis: 60%;
+    margin-left: 20%;
+}
+.sidebarr{
+    background-color: darkgray;
+    height: 600px;
+    float:right;
+    flex-basis: 20%;
+    margin-top: -400px;
+}
+.sidebarl{
+    background-color: red;
+    height: 600px;
+    float: left;
+    flex-basis: 20%;
+    margin-top: -600px;
+}    
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: indigo;
+    height: 50px;
+
+}

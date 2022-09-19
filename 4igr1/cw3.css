@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    border: 1px solid black;
+    height: 150px;
+}
+.aside{
+    border: 1px solid black;
+    height: 600px;
+    flex-basis: 40%;
+}
+.nav{
+    border: 1px solid black;
+    height: 50px;
+    flex-basis: 60%;
+    float: right;
+}
+.article{
+    border: 1px solid black;
+    float: right;
+    height: 550px;
+    flex-basis: 60%;
+    margin-top: -550px;
+    margin-left: 40%;
+}
+
+    
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    border: 1px solid black;
+    height: 50px;
+
+}
