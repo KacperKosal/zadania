@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="Imie" placeholder="Imie">
+    <input type="text" name="Nazwisko" placeholder="Nazwisko">
+    <input type="text" name="Stanowisko" placeholder="Stanowisko">
+    <input type="text" name="Pensja"placeholder="Pensja">
+    <input type="submit" name="dodaj">
+    <?php
+      $con = new msqli("127.0.0.1", "root","","4igr1spr");
+       
+      $q="SELECT imie, nazwisko, stanowisko, zarobki FROM pracownicy";
+
+    ?>
+</body>
+</html>
